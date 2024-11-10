@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(110deg, #929292, #7bdaf3);
+    font-family: 'Poppins', sans-serif;
+}
+
+body section#container {
+    width: 380px;
+    padding: 40px;
+    border-radius: 7px;
+    background-color: #bdbdbd;
+}
+
+body section#container section#password-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 25px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+body section#container section#password-box h3.password {
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+}
+body section#container section#password-box div#copy-btn {
+    margin-left: 100px;
+    font-size: 17px;
+    color: grey;
+    cursor: pointer;
+}
+body section#container section#password-box div#copy-btn span {
+    position: fixed;
+    font-size: 11px;
+    display: none;
+}
+body section#container section#password-box div#copy-btn i {
+    position: fixed;
+}
+
+body section#container section#checkboxes-box {
+    padding: 1px;
+    margin-top: 15px;
+}
+body section#container section#checkboxes-box div.lowercase {
+    pointer-events: none;
+}
+body section#container section#checkboxes-box div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    padding-left: 20px;
+}
+body section#container section#checkboxes-box div span {
+    padding-left: 20px;
+}
+body section#container section#checkboxes-box div input {
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body section#container section#checkboxes-box div input::before {
+    content: "✅";
+    display: none;
+    font-size: 11px;}
+body section#container section#checkboxes-box div input:checked {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+body section#container section#checkboxes-box div input:checked::before {
+    display: block;
+}
+
+body section#container section#password-length {
+    padding: 2px;
+    padding-left: 20px;
+}
+body section#container section#password-length h3 {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+}
+body section#container section#password-length input {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 3px;
+    top: -3px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: lightgrey;
+}
+body section#container section#password-length input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #7bdaf3;
+}
+body section#container section#password-length div.length-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 30px;
+    background: #ffffff;
+    border: 2px solid grey;
+    border-radius: 3px;
+    margin-left: 200px;
+    margin-top: -20px;
+}
+
+body section#container button#generate-btn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 260px;
+    height: 50px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #7bdaf3;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+body section#container button#generate-btn:hover {
+    background: #ffffff;
+    color: #7bdaf3;
+}
